@@ -1,0 +1,107 @@
+version: '3'
+services:
+  webapp:
+    restart: always
+    build: ./webapp
+    ports:
+      - 8081:3000
+    volumes:
+      - ./webapp:/code
+  user_auth_api:
+    restart: always
+    build: ./microservices/user_auth
+    ports:
+      - 12001:3000
+    volumes:
+      - ./microservices/user_auth:/code
+    depends_on:
+      - user_auth_mongo
+  user_auth_mongo:
+    image: mongo
+    volumes:
+      - user_auth_mongodb:/data/db
+  restaurant_auth_api:
+    restart: always
+    build: ./microservices/restaurant_auth
+    ports:
+      - 12002:3000
+    volumes:
+      - ./microservices/user_auth:/code
+    depends_on:
+      - restaurant_auth_mongo
+  restaurant_auth_mongo:
+    image: mongo
+    volumes:
+      - restaurant_auth_mongodb:/data/db
+  restaurant_data_api:
+    restart: always
+    build: ./microservices/restaurant_data
+    ports:
+      - 12003:3000
+    volumes:
+      - ./microservices/restaurant_data:/code
+    depends_on:
+      - restaurant_data_mongo
+  restaurant_data_mongo:
+    image: mongo
+    hostname: restaurant_data_db
+    ports:
+      - 12103:27017
+    volumes:
+      - restaurant_data_mongodb:/data/db
+  booking:
+    restart: always
+    build: ./microservices/booking
+    ports:
+      - 12004:3000
+    volumes:
+      - ./microservices/booking:/code
+    depends_on:
+      - booking_mongo
+  booking_mongo:
+    image: mongo
+    hostname: booking_db
+    ports:
+      - 12104:27017
+    volumes:
+      - booking_mongodb:/data/db
+  grafana:
+    image: grafana/grafana:7.3.0
+    container_name: grafana
+    ports:
+      - 9092:3000
+    depends_on:
+      - prometheus
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - 9090:9090
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    volumes:
+      - ./benchmarks/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    depends_on:
+      - cadvisor
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    ports:
+      - 9091:8080
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    depends_on:
+      - redis
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - 6379:6379
+volumes:
+  user_auth_mongodb:
+  restaurant_auth_mongodb:
+  restaurant_data_mongodb:
+  booking_mongodb:

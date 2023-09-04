@@ -1,0 +1,194 @@
+{
+    "1": {
+        "nome": "ristorante buono",
+        "indirizzo": "via Roma 1",
+        "email": "rbuono@mail.it",
+        "rating": "4",
+        "menu": [
+            {
+                "category": "antipasti",
+                "meals": [
+                    {
+                        "item": "prosciutto",
+                        "price": "5.5\u20ac"
+                    },
+                    {
+                        "item": "suppl\u00ec",
+                        "price": "1.5\u20ac"
+                    }
+                ]
+            },
+            {
+                "category": "Primi",
+                "meals": [
+                    {
+                        "item": "pasta al sugo",
+                        "price": "7\u20ac"
+                    },
+                    {
+                        "item": "risotto",
+                        "price": "9\u20ac"
+                    }
+                ]
+            },
+            {
+                "category": "Secondi",
+                "meals": [
+                    {
+                        "item": "carne",
+                        "price": "12\u20ac"
+                    },
+                    {
+                        "item": "pesce",
+                        "price": "15\u20ac"
+                    }
+                ]
+            }
+        ],
+        "search_string": "{'nome': 'ristorante buono', 'indirizzo': 'via roma 1', 'rating': '4', 'menu': [{'category': 'antipasti', 'meals': [{'item': 'prosciutto', 'price': '5.5€'}, {'item': 'supplì', 'price': '1.5€'}]}, {'category': 'primi', 'meals': [{'item': 'pasta al sugo', 'price': '7€'}, {'item': 'risotto', 'price': '9€'}]}, {'category': 'secondi', 'meals': [{'item': 'carne', 'price': '12€'}, {'item': 'pesce', 'price': '15€'}]}]}"
+    },
+    "2": {
+        "nome": "pizzeria margherita",
+        "indirizzo": "via napoli 2",
+        "email": "pizzeria@mail.it",
+        "rating": "5",
+        "menu": [
+            {
+                "category": "antipasti",
+                "meals": [
+                    {
+                        "item": "prosciutto",
+                        "price": "5.5\u20ac"
+                    },
+                    {
+                        "item": "suppl\u00ec",
+                        "price": "1.5\u20ac"
+                    }
+                ]
+            },
+            {
+                "category": "Primi",
+                "meals": [
+                    {
+                        "item": "pasta al sugo",
+                        "price": "7\u20ac"
+                    },
+                    {
+                        "item": "pizza",
+                        "price": "9\u20ac"
+                    }
+                ]
+            },
+            {
+                "category": "Secondi",
+                "meals": [
+                    {
+                        "item": "carne",
+                        "price": "12\u20ac"
+                    },
+                    {
+                        "item": "pesce",
+                        "price": "15\u20ac"
+                    }
+                ]
+            }
+        ],
+        "search_string": "{'nome': 'pizzeria margherita', 'indirizzo': 'via napoli 2', 'rating': '5', 'menu': [{'category': 'antipasti', 'meals': [{'item': 'prosciutto', 'price': '5.5€'}, {'item': 'supplì', 'price': '1.5€'}]}, {'category': 'primi', 'meals': [{'item': 'pasta al sugo', 'price': '7€'}, {'item': 'pizza', 'price': '9€'}]}, {'category': 'secondi', 'meals': [{'item': 'carne', 'price': '12€'}, {'item': 'pesce', 'price': '15€'}]}]}"
+    },
+    "3": {
+        "nome": "ristorante etnico",
+        "indirizzo": "via Milano 34",
+        "email": "retnico@mail.it",
+        "rating": "4",
+        "menu": [
+            {
+                "category": "antipasti",
+                "meals": [
+                    {
+                        "item": "wakame",
+                        "price": "5.5\u20ac"
+                    },
+                    {
+                        "item": "suppl\u00ec",
+                        "price": "1.5\u20ac"
+                    }
+                ]
+            },
+            {
+                "category": "Primi",
+                "meals": [
+                    {
+                        "item": "pasta al sugo",
+                        "price": "7\u20ac"
+                    },
+                    {
+                        "item": "sushi",
+                        "price": "9\u20ac"
+                    }
+                ]
+            },
+            {
+                "category": "Secondi",
+                "meals": [
+                    {
+                        "item": "carne",
+                        "price": "12\u20ac"
+                    },
+                    {
+                        "item": "pesce",
+                        "price": "15\u20ac"
+                    }
+                ]
+            }
+        ],
+        "search_string": "{'nome': 'ristorante etnico', 'indirizzo': 'via milano 34', 'rating': '4', 'menu': [{'category': 'antipasti', 'meals': [{'item': 'wakame', 'price': '5.5€'}, {'item': 'supplì', 'price': '1.5€'}]}, {'category': 'primi', 'meals': [{'item': 'pasta al sugo', 'price': '7€'}, {'item': 'sushi', 'price': '9€'}]}, {'category': 'secondi', 'meals': [{'item': 'carne', 'price': '12€'}, {'item': 'pesce', 'price': '15€'}]}]}"
+    },
+    "4": {
+        "nome": "ristorante cattivo",
+        "indirizzo": "via Roma 1123",
+        "email": "rcattivo@mail.it",
+        "rating": "1",
+        "menu": [
+            {
+                "category": "antipasti",
+                "meals": [
+                    {
+                        "item": "prosciutto",
+                        "price": "5.5\u20ac"
+                    },
+                    {
+                        "item": "suppl\u00ec",
+                        "price": "1.5\u20ac"
+                    }
+                ]
+            },
+            {
+                "category": "Primi",
+                "meals": [
+                    {
+                        "item": "pasta al sugo",
+                        "price": "7\u20ac"
+                    },
+                    {
+                        "item": "pasta scotta",
+                        "price": "9\u20ac"
+                    }
+                ]
+            },
+            {
+                "category": "Secondi",
+                "meals": [
+                    {
+                        "item": "carne",
+                        "price": "12\u20ac"
+                    },
+                    {
+                        "item": "pesce",
+                        "price": "15\u20ac"
+                    }
+                ]
+            }
+        ],
+        "search_string": "{'nome': 'ristorante cattivo', 'indirizzo': 'via roma 1123', 'rating': '1', 'menu': [{'category': 'antipasti', 'meals': [{'item': 'prosciutto', 'price': '5.5€'}, {'item': 'supplì', 'price': '1.5€'}]}, {'category': 'primi', 'meals': [{'item': 'pasta al sugo', 'price': '7€'}, {'item': 'pasta scotta', 'price': '9€'}]}, {'category': 'secondi', 'meals': [{'item': 'carne', 'price': '12€'}, {'item': 'pesce', 'price': '15€'}]}]}"
+    }
+}
